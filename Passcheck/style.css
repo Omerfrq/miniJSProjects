@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+:root
+{
+  --primarycolor:mediumaquamarine;
+  --white:white;
+  --boxshadow:0 10px 20px -10px rgba(0,0,0,0.9);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color:var(--white);
+  background:var(--primarycolor);
+}
+
+.wrapper
+{
+  position: absolute;
+  top:20%;
+  left:10%;
+  padding: 10px;
+  width: 70%;
+  height: auto;
+}
+
+input
+{
+  margin:10px 0;
+  width: 100%;
+  height: 110px;
+  font-size: 90px;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding-right:4px;
+}
+
+::placeholder {
+    color:var(--white);
+    opacity:0.2; /* Firefox */
+}
+
+input:focus
+{
+  outline: none;
+
+}
+.comment
+{
+  margin-top:20px;
+  font-size: 60px;
+}
+
+h1
+{
+  text-transform:uppercase;
+  display: table;
+}
+span
+{
+  padding: 0.2em 0.2em;
+  border-radius: 20px;
+  color:var(--primarycolor);
+  background:var(--white);
+}
+
+.right
+{
+  position: absolute;
+  top:0%;
+  left:90%;
+  padding: 0.2em 1em;
+}
+.logo
+{
+  position: absolute;
+  font-size: 20px;
+  top:5%;
+  left:84%;
+  padding: 0.9em 3em;
+  border-radius: 20px;
+  color:var(--primarycolor);
+  letter-spacing: 3px;
+  background:var(--white);
+  box-shadow: var(--boxshadow);
+}

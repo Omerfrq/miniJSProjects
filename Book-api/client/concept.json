@@ -1,0 +1,31 @@
+[
+    {
+        "imageId": 1,
+        "imageurl": "http://localhost:300/v1/api/picture/dog.png",
+        "imageCaption": "Photography is a way of feeling, of touching, of loving",
+        "location": "Islamabad",
+        "ImageBy": {
+            "id": "2101847512",
+            "username": "tarik.khattak"
+        },
+        "reviews": [
+            {
+                "reviewby _id": {
+                    "id": "2101847512",
+                    "username": "Omer Farooq"
+                },
+                "content": "Blissfull",
+                "timestamp": 1549992977
+            }
+        ],
+        "meta": {
+            "imagesize": "3.44Mb",
+            "Camera": "Nikon D5600",
+            "dimensions": {
+                "height": 1350,
+                "width": 1080
+            }
+        },
+        "Tags": ["#morning", "#wanderlust", "#goldenlight", "#roadtrip"]
+    }
+]

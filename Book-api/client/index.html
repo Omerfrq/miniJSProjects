@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://bootswatch.com/4/solar/bootstrap.min.css"
+        />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Book App</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Book-App</a>
+            </div>
+            <div class="col">
+                <select class="custom-select mr-2 sm-2">
+                    <option selected>Choose theme</option>
+                    <option value="1">Minty</option>
+                    <option value="2">Yeti</option>
+                    <option value="3">Superhero</option>
+                </select>
+            </div>
+        </nav>
+        <form class="container mt-3">
+            <div class="form-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Book Name"
+                    name="name"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Genre"
+                    name="genre"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Author"
+                    name="author"
+                />
+            </div>
+            <div class="form-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="year"
+                    name="year"
+                    required
+                />
+            </div>
+            <input class="btn btn-success btn-block" type="submit" />
+        </form>
+
+        <div class="book-list container mt-2 mb-2"></div>
+    </body>
+
+    <script src="book.js"></script>
+</html>

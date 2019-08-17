@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Movie Search</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <a class="navbar-brand" href="/">iMovies</a>
+        </nav>
+        <div class="container">
+            <form id="myform" class="mt-5">
+                <div class="form-group search-term">
+                    <input class="form-control" type="text" name="search" />
+                </div>
+                <div class="form-group">
+                    <input
+                        type="submit"
+                        class="btn btn-primary btn-block"
+                        value="Submit"
+                    />
+                </div>
+            </form>
+            <div class="container d-flex flex-wrap" id="img-container"></div>
+        </div>
+    </body>
+    <script src="movie.js"></script>
+</html>

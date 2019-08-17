@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="hexcode.css">
+</head>
+
+<body>
+  <div class="wrapper" id="omer">
+    <h1 id="hex-code" onclick="copy()">#283048</h1>
+    <button type="button" id="btn" onclick="Hexcolor()">New Color</button>
+  </div>
+</body>
+<script type="text/javascript">
+
+  function Hexcolor() {
+    var color = "#" + Math.random().toString(16).slice(2, 8);
+    document.body.style.backgroundColor = color;
+    document.getElementById('hex-code').innerHTML = color;
+    document.getElementById('btn').style.backgroundColor = color;
+
+
+  }
+
+  function copy() {
+    var range = document.getSelection().getRangeAt(0);
+    range.selectNode(document.getElementById("hex-code"));
+    window.getSelection().addRange(range);
+    document.execCommand("copy")
+  }
+
+
+
+</script>
+
+</html>

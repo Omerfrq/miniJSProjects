@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+:root
+{
+  --font:"Poiret One";
+  --bg:#283048;
+  --white:#fff;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  font-family: var(--font);
+  color: var(--white);
+  width: 100%;
+  height: 100vh;
+  background-image:url(card.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
+.wrapper
+{
+  top:50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-60%,-80%);
+  text-align: center;
+}
+h1
+{
+  font-size:40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h6
+{
+  font-size: 20px;
+  border-bottom: 1px solid var(--white);
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button
+{
+  font-size:1.2rem;
+  margin: 10px;
+  background:var(--bg);
+  color:var(--white);
+  padding: 1em 3em;
+  border:2px solid var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.color-value
+{
+  margin-left: 30px;
+  display: none;
+}
+.container h4
+{
+  color:black;
+  font-weight: bold;
+}
